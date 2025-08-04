@@ -5,4 +5,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 };
 
+module.exports = {
+  webpack: (config: any) => {
+    config.cache = false;
+    return config;
+  }
+}
+
 export default nextConfig;
